@@ -35,3 +35,7 @@
 - `pnpm test`（vitest；需先安装依赖）。
 - CI：GitHub Actions 安装依赖并运行测试。
 - 安装：Plugins > Add plugin 选择本目录（或开发流程本地安装）。Host 模块更新后需重启 DSH 才会加载新代码。
+
+## License
+
+MIT — see [LICENSE](LICENSE).
