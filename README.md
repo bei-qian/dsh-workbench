@@ -2,8 +2,9 @@
 
 把**正在运行的工作区**（有会话/子智能体在跑的）置顶到侧边栏工作区列表上方，让活跃工作区始终在视线内。基于 DeepSeek Harness 的插件（bundle）。
 
-- 包名：`@local/dsh-workbench`
+- 包名：`@bei-qian/dsh-workbench`
 - 形态：DSH bundle（Host-only 排序逻辑 + 一个极小 Client 占位标记）
+- 仓库：https://github.com/bei-qian/dsh-workbench
 - BMad 规划与票单：`../_bmad-output/initiative-workbench/`
 
 ## 工作方式
@@ -34,7 +35,19 @@
 
 - `pnpm test`（vitest；需先安装依赖）。
 - CI：GitHub Actions 安装依赖并运行测试。
-- 安装：Plugins > Add plugin 选择本目录（或开发流程本地安装）。Host 模块更新后需重启 DSH 才会加载新代码。
+
+## 安装
+
+- **npm（推荐）**：发布后在 `Plugins > Add plugin` 填 `@bei-qian/dsh-workbench`（可带版本），或命令行 `dsh plugin add @bei-qian/dsh-workbench`；也可由 agent 用 `plugin_manager.install_bundle` 传入包名。
+- **本地目录（开发）**：Plugins > Add plugin 选择本目录。
+- Host 模块更新后需重启 DSH 才会加载新代码。
+
+## 发布（npm）
+
+- 首次：`npm login`（需登录且对 `@bei-qian` 作用域有发布权限）。
+- 校验产物：`npm pack --dry-run`，确认包含 `index.js`、`client.js`、`cordis.patch.yml`、`locale/*.json`、`docs`、`icon.svg`。
+- 发布：`npm publish`（`publishConfig.access=public` 已配置）。
+- 发新版本：先改 `package.json` 的 `version`，再 `npm publish`。
 
 ## License
 

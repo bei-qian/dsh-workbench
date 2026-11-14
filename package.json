@@ -1,10 +1,33 @@
 {
-  "name": "@local/dsh-workbench",
+  "name": "@bei-qian/dsh-workbench",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "type": "module",
   "description": "Workspace arrangement plugin for DeepSeek Harness: keeps running workspaces on top, extensible.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "workspace",
+    "sidebar",
+    "workbench"
+  ],
+  "author": "bei-qian",
+  "homepage": "https://github.com/bei-qian/dsh-workbench#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bei-qian/dsh-workbench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bei-qian/dsh-workbench/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",

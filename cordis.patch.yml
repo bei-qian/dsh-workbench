@@ -1,5 +1,5 @@
 - insert:
     - id: workbench
-      name: '@local/dsh-workbench'
+      name: '@bei-qian/dsh-workbench'
       config:
         enabled: true

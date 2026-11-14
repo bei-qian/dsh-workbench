@@ -8,11 +8,17 @@
 
 ## [未发布]
 
+### 变更
+
+- 以公开 scoped 包 `@bei-qian/dsh-workbench` 发布（原 `@local/dsh-workbench`）：移除 `private`，
+  增加 `publishConfig.access`、`repository`/`homepage`/`bugs`/`keywords`/`author` 与 `engines.dsh`。
+- bundle patch 的 `name` 与 client factory id 已同步为新包名。
+
 ## [0.1.0] - 2026-11-14
 
 ### 新增
 
-- 仅 Host 端的 DSH bundle `@local/dsh-workbench`：重排持久化的工作区注册表顺序，
+- 仅 Host 端的 DSH bundle `@bei-qian/dsh-workbench`：重排持久化的工作区注册表顺序，
   使有运行中会话的工作区排在侧边栏最前。
 - 基于 Host 事件 `api-session/status`、`api-session/added`、`api-session/removed`
   的实时更新。
