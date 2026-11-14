@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "DSH Workbench",
+    "description": "Keeps running workspaces on top of the sidebar. Extensible workspace arrangement for DeepSeek Harness.",
+    "detail": "docs/DETAIL.md"
+  }
+}

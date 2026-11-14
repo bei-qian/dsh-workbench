@@ -1,0 +1,5 @@
+- insert:
+    - id: workbench
+      name: '@local/dsh-workbench'
+      config:
+        enabled: true

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "工作台",
+    "description": "把正在运行的工作区置顶，并持续扩展工作区编排体验。",
+    "detail": "docs/DETAIL.md"
+  }
+}
