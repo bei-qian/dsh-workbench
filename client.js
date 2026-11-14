@@ -3,7 +3,7 @@
 // slot injection and disposal can be verified. The running-workspace pinning
 // logic lands in later stories (see _bmad-output/initiative-workbench).
 window.__ModuleLoader__.load({
-  id: '@bei-qian/dsh-workbench',
+  id: '@beiqian/dsh-workbench',
   factory(require) {
     const React = require('react');
     const h = React.createElement;

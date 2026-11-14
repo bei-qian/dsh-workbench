@@ -10,7 +10,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Published as the public scoped package `@bei-qian/dsh-workbench` (renamed from
+- Published as the public scoped package `@beiqian/dsh-workbench` (renamed from
   `@local/dsh-workbench`): removed `private`, added `publishConfig.access`,
   `repository`/`homepage`/`bugs`/`keywords`/`author`, and `engines.dsh`.
 - Updated the bundle patch `name` and the client factory id to the new package name.
@@ -19,7 +19,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-- Host-only DSH bundle `@bei-qian/dsh-workbench`: reorders the durable workspace
+- Host-only DSH bundle `@beiqian/dsh-workbench`: reorders the durable workspace
   registry so workspaces with running sessions lead the sidebar.
 - Real-time updates driven by Host `api-session/status`, `api-session/added`, and
   `api-session/removed` events.
